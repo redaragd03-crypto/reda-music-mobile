@@ -1,22 +1,16 @@
 [project]
-name = "reda_music_mobile"
-version = "1.0.0"
+name = "reda-music"
+version = "11.1.0"
 description = "REDA MUSIC - Offline local music player"
-requires-python = ">=3.14,<3.15"
+requires-python = ">=3.10"
 dependencies = [
-    "flet==0.86.4",
-    "flet-audio==0.86.4",
-    "mutagen==1.48.1",
+    "flet==0.86.1",
+    "flet-audio==0.86.1",
+    "mutagen>=1.47.0",
 ]
 
 [tool.flet]
 product = "REDA MUSIC"
-description = "Local offline music player"
-org = "com.reda"
-bundle_id = "com.reda.music"
-copyright = "REDA MUSIC"
-
-[tool.flet.android]
-min_sdk_version = 24
-target_sdk_version = 35
-adaptive_icon_background = "#0B0D12"
+org = "com.reda.music"
+company = "REDA"
+description = "مشغل موسيقى محلي بدون إنترنت"

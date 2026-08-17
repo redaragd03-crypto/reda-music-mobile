@@ -1,0 +1,16 @@
+REDA MUSIC V3
+
+مهم:
+هذه النسخة أزالت Windows MCI بالكامل.
+التشغيل يتم بواسطة Flet Audio داخل التطبيق نفسه على Windows وAndroid.
+
+شغّل:
+python main.py
+
+ثم اضغط على الأغنية.
+
+إذا ظهرت الأغنية ولم تعمل:
+افتح Terminal وشغّل:
+python -c "import flet, flet_audio; print(flet.__version__); print('flet-audio OK')"
+
+لا تستخدم Windows Media Player أو أي برنامج خارجي.

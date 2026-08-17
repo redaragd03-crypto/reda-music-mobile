@@ -169,7 +169,7 @@ class LocalMusicApp:
         self.page.rtl = True
 
         header = ft.Container(
-            padding=ft.padding.symmetric(horizontal=16, vertical=10),
+            padding=ft.Padding.symmetric(horizontal=16, vertical=10),
             bgcolor="#0C0D14",
             border=ft.border.only(bottom=ft.BorderSide(1, "#242632")),
             content=ft.Row(
@@ -278,13 +278,13 @@ class LocalMusicApp:
             controls=[
                 header,
                 ft.Container(
-                    padding=ft.padding.symmetric(horizontal=12, vertical=8),
+                    padding=ft.Padding.symmetric(horizontal=12, vertical=8),
                     content=self.search_field,
                 ),
                 hero,
                 library_header,
                 ft.Container(
-                    padding=ft.padding.symmetric(horizontal=12, vertical=4),
+                    padding=ft.Padding.symmetric(horizontal=12, vertical=4),
                     content=filters,
                 ),
                 self.list_view,
@@ -305,7 +305,7 @@ class LocalMusicApp:
     def player_bar(self):
         return ft.Container(
             bgcolor="#0D0F1A",
-            padding=ft.padding.symmetric(horizontal=14, vertical=8),
+            padding=ft.Padding.symmetric(horizontal=14, vertical=8),
             border=ft.border.only(top=ft.BorderSide(1, "#252836")),
             content=ft.Column(
                 controls=[
@@ -480,7 +480,7 @@ class LocalMusicApp:
         exists = path.exists()
 
         return ft.Container(
-            padding=ft.padding.symmetric(horizontal=10, vertical=8),
+            padding=ft.Padding.symmetric(horizontal=10, vertical=8),
             border_radius=15,
             bgcolor="#111216",
             border=ft.border.all(1, "#25272E"),

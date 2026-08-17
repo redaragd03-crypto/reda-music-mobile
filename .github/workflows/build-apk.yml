@@ -32,7 +32,7 @@ jobs:
 
       - name: Build APK
         run: |
-          python -m flet build apk --yes
+          flet build apk --yes
 
       - name: Find APK
         run: |
